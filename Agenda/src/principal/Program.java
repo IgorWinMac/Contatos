@@ -26,11 +26,11 @@ public class Program {
 
 			System.out.println("Informe a idade: ");
 			int idade = entrada.nextInt();
-			pessoas.setIdade(idade);
+			pessoa.setIdade(idade);
 
 			System.out.println("Informe o telefone: ");
 			String telefone = entrada.nextLine();
-			pessoas.setTelefone;
+			pessoa.setTelefone;
 			
 			pessoa.pularLinha();
 
