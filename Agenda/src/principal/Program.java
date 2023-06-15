@@ -38,7 +38,7 @@ public class Program {
 			opcao = entrada.nextInt();
 			
 			entrada.nextLine();
-		pessoas.add(pessoa);
+			pessoas.add(pessoa);
 		} while (opcao == 1);
 
 		for(Pessoa p : pessoas){
