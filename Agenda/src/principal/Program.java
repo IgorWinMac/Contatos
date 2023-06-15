@@ -12,25 +12,25 @@ public class Program {
 
 		Scanner entrada = new Scanner(System.in);
 
-		Pessoa pessoa = new Pessoa();
+		Pessoa pessoa ;
 
-		List<String> pessoas = new ArrayList<>();
+		List<Pessoa> pessoas = new ArrayList<>();
 
 		int opcao = 0;
 
 		do {
-
+			pessoa = new Pessoa();
 			System.out.println("Informe o nome: ");
 			String nome = entrada.nextLine();
-			pessoas.add(nome);
+			pessoa.setNome(nome);
 
 			System.out.println("Informe a idade: ");
-			String idade = entrada.nextLine();
-			pessoas.add(idade);
+			int idade = entrada.nextInt();
+			pessoas.setIdade(idade);
 
 			System.out.println("Informe o telefone: ");
 			String telefone = entrada.nextLine();
-			pessoas.add(telefone);
+			pessoas.setTelefone;
 			
 			pessoa.pularLinha();
 
@@ -38,10 +38,12 @@ public class Program {
 			opcao = entrada.nextInt();
 			
 			entrada.nextLine();
-
+		pessoas.add(pessoa);
 		} while (opcao == 1);
 
-		System.out.println(pessoas);
+		for(Pessoa p : pessoas){
+		System.out.println(p);
+		}
 	}
 
 }
